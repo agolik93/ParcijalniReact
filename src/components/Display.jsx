@@ -22,7 +22,11 @@ const Display = () => {
         <div>
           <span className="text-xl font-bold">Repozitorij:</span>
           {Array.isArray(repos) &&
-            repos.map((e) => <div key={e.id}>{e.name}</div>)}
+            repos.map((e) => (
+              <div key={e.id} className="m-2">
+                {e.name}
+              </div>
+            ))}
         </div>
       </div>
     );

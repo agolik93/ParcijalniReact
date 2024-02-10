@@ -5,8 +5,10 @@ import Display from "./components/Display";
 const App = () => {
   return (
     <SearchContextProvider>
-      <Form />
-      <Display />
+      <div className="m-5">
+        <Form />
+        <Display />
+      </div>
     </SearchContextProvider>
   );
 };
